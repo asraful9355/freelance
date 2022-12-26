@@ -23,16 +23,7 @@
 		<link rel="stylesheet" type="text/css" href="{{asset('frontend/style.css')}}" media="all" />
 		<!-- Responsive CSS -->
 		<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/responsive.css')}}" media="all" />
-	    <!-- Freelancer colors. You can choose any other color by changing color css file.
-	    -->
-		<!-- <link rel="stylesheet" type="text/css" href="css/colors/default.css"> -->
-		<!-- <link rel="stylesheet" type="text/css" href="css/colors/red.css"> -->
-		<!-- <link rel="stylesheet" type="text/css" href="css/colors/blue.css"> -->
-		<!-- <link rel="stylesheet" type="text/css" href="css/colors/green.css"> -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+	   
 	</head>
 	<body class="js" data-spy="scroll" data-target=".navbar" data-offset="50">
 	    <!-- Page loader -->
@@ -75,7 +66,7 @@
 							<div class="col-md-12">
 								<div class="slider-content wow zoomIn">
 									<div class="slider-content-left col-md-8">
-										<img src="images/slide-left.png" alt="" />
+										<img src="{{ asset('frontend/images/slide-left.png')}}" alt="" />
 									</div>
 									<div class="slider-content-right col-md-4">
 										<div class="slider-icon text-right">
@@ -183,7 +174,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="service-bottom-content wow fadeInUp">
-							<img src="images/service-right.png" alt="" />
+							<img src="{{ asset('frontend/images/service-right.png')}}" alt="" />
 							<div class="service-bottom-web">
 								<a href="#">Web Services</a>
 							</div>
@@ -339,7 +330,7 @@
 									<div class="experience-slide-one">
 										<div class="col-md-5">
 											<div class="experience-slide-img">
-												<img src="{{asset('frontend/images/experience.jpg')}}" alt="" />
+												<img src="{{ asset('frontend/images/experience.jpg')}}" alt="" />
 											</div>
 										</div>
 										<div class="col-md-7">
@@ -355,7 +346,7 @@
 									<div class="experience-slide-one">
 										<div class="col-md-5">
 											<div class="experience-slide-img">
-												<img src="{{asset('frontend/images/experience.jpg')}}" alt="" />
+												<img src="{{ asset('frontend/images/experience.jpg')}}" alt="" />
 											</div>
 										</div>
 										<div class="col-md-7">
@@ -371,7 +362,7 @@
 									<div class="experience-slide-one">
 										<div class="col-md-5">
 											<div class="experience-slide-img">
-												<img src="{{asset('frontend/images/experience.jpg')}}" alt="" />
+												<img src="{{ asset('frontend/images/experience.jpg')}}" alt="" />
 											</div>
 										</div>
 										<div class="col-md-7">
@@ -387,7 +378,7 @@
 									<div class="experience-slide-one">
 										<div class="col-md-5">
 											<div class="experience-slide-img">
-												<img src="{{asset('frontend/images/experience.jpg')}}" alt="" />
+												<img src="{{ asset('frontend/images/experience.jpg')}}" alt="" />
 											</div>
 										</div>
 										<div class="col-md-7">
@@ -424,9 +415,9 @@
 				<div class="row">
 					<div class="col-md-4 col-sm-6">
 						<div class="portfolio-content">
-							<img src="images/portfolio1.png" alt="" />
+							<img src="{{ asset('frontend/images/portfolio1.png')}}" alt="" />
 							<div class="portfolio-content-overlay text-center">
-								<a class="portfolio-image-link" href="{{asset('frontend/images/portfolio1.png')}}" data-lightbox="image-set" data-title=""><i class="fa fa-plus" aria-hidden="true"></i></a>
+								<a class="portfolio-image-link" href="{{ asset('frontend/images/portfolio1.png')}}" data-lightbox="image-set" data-title=""><i class="fa fa-plus" aria-hidden="true"></i></a>
 								<a href="#"><h3>Go Fashion Pro</h3></a>
 								<h5>Branding, Magazine</h5>
 							</div>
@@ -434,9 +425,9 @@
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="portfolio-content">
-							<img src="images/portfolio2.png" alt="" />
+							<img src="{{ asset('frontend/images/portfolio2.png')}}" alt="" />
 							<div class="portfolio-content-overlay text-center">
-								<a class="portfolio-image-link" href="{{asset('frontend/images/portfolio2.png')}}" data-lightbox="image-set" data-title=""><i class="fa fa-plus" aria-hidden="true"></i></a>
+								<a class="portfolio-image-link" href="{{ asset('frontend/images/portfolio2.png')}}" data-lightbox="image-set" data-title=""><i class="fa fa-plus" aria-hidden="true"></i></a>
 								<a href="#"><h3>Go Fashion Pro</h3></a>
 								<h5>Branding, Magazine</h5>
 							</div>
@@ -444,9 +435,9 @@
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="portfolio-content">
-							<img src="images/portfolio3.png" alt="" />
+							<img src="{{ asset('frontend/images/portfolio3.png')}}" alt="" />
 							<div class="portfolio-content-overlay text-center">
-								<a class="portfolio-image-link" href="{{asset('frontend/images/portfolio3.png')}}" data-lightbox="image-set" data-title=""><i class="fa fa-plus" aria-hidden="true"></i></a>
+								<a class="portfolio-image-link" href="{{ asset('frontend/images/portfolio3.png')}}" data-lightbox="image-set" data-title=""><i class="fa fa-plus" aria-hidden="true"></i></a>
 								<a href="#"><h3>Go Fashion Pro</h3></a>
 								<h5>Branding, Magazine</h5>
 							</div>
@@ -454,9 +445,9 @@
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="portfolio-content">
-							<img src="images/portfolio4.png" alt="" />
+							<img src="{{ asset('frontend/images/portfolio4.png')}}" alt="" />
 							<div class="portfolio-content-overlay text-center">
-								<a class="portfolio-image-link" href="{{asset('frontend/images/portfolio4.png')}}" data-lightbox="image-set" data-title=""><i class="fa fa-plus" aria-hidden="true"></i></a>
+								<a class="portfolio-image-link" href="{{ asset('frontend/images/portfolio4.png')}}" data-lightbox="image-set" data-title=""><i class="fa fa-plus" aria-hidden="true"></i></a>
 								<a href="#"><h3>Go Fashion Pro</h3></a>
 								<h5>Branding, Magazine</h5>
 							</div>
@@ -464,9 +455,9 @@
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="portfolio-content">
-							<img src="images/portfolio5.png" alt="" />
+							<img src="{{ asset('frontend/images/portfolio5.png')}}" alt="" />
 							<div class="portfolio-content-overlay text-center">
-								<a class="portfolio-image-link" href="{{asset('frontend/images/portfolio5.png')}}" data-lightbox="image-set" data-title=""><i class="fa fa-plus" aria-hidden="true"></i></a>
+								<a class="portfolio-image-link" href="{{ asset('frontend/images/portfolio5.png')}}" data-lightbox="image-set" data-title=""><i class="fa fa-plus" aria-hidden="true"></i></a>
 								<a href="#"><h3>Go Fashion Pro</h3></a>
 								<h5>Branding, Magazine</h5>
 							</div>
@@ -474,9 +465,9 @@
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="portfolio-content">
-							<img src="images/portfolio6.png" alt="" />
+							<img src="{{ asset('frontend/images/portfolio6.png')}}" alt="" />
 							<div class="portfolio-content-overlay text-center">
-								<a class="portfolio-image-link" href="{{asset('frontend/images/portfolio6.png')}}" data-lightbox="image-set" data-title=""><i class="fa fa-plus" aria-hidden="true"></i></a>
+								<a class="portfolio-image-link" href="{{ asset('frontend/images/portfolio6.png')}}" data-lightbox="image-set" data-title=""><i class="fa fa-plus" aria-hidden="true"></i></a>
 								<a href="#"><h3>Go Fashion Pro</h3></a>
 								<h5>Branding, Magazine</h5>
 							</div>
@@ -605,7 +596,7 @@
 										<div class="review-left-bg-color"></div>
 									</div>
 									<div class="review-left-over">
-										<img src="images/review-img.png" alt="" />
+										<img src="{{ asset('frontend/images/review-img.png')}}" alt="" />
 										<div class="review-left-text">
 											<h3>Jenny K. Ferti</h3>
 											<p>Web Designer</p>
@@ -626,7 +617,7 @@
 										<div class="review-left-bg-color"></div>
 									</div>
 									<div class="review-left-over">
-										<img src="images/review-img.png" alt="" />
+										<img src="{{ asset('frontend/images/review-img.png')}}" alt="" />
 										<div class="review-left-text">
 											<h3>Jenny K. Ferti</h3>
 											<p>Web Designer</p>
@@ -647,7 +638,7 @@
 										<div class="review-left-bg-color"></div>
 									</div>
 									<div class="review-left-over">
-										<img src="{{asset('frontend/')}}images/review-img.png" alt="" />
+										<img src="{{ asset('frontend/images/review-img.png')}}" alt="" />
 										<div class="review-left-text">
 											<h3>Jenny K. Ferti</h3>
 											<p>Web Designer</p>
@@ -743,7 +734,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="testimonial-right wow fadeInUp">
-							<img src="images/testimonial-right.jpg" alt="" />
+							<img src="{{ asset('frontend/images/testimonial-right.jpg')}}" alt="" />
 							<div class="testimonial-right-txt clearfix">
 								<h4 class="pull-left">Professionalism</h4>
 								<h4 class="pull-right">64%</h4>
@@ -788,11 +779,11 @@
 							<div class="carousel slide" data-ride="carousel" id="quote-carousel">
 								<!-- Bottom Carousel Indicators -->
 								<ol class="carousel-indicators">
-									<li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="images/bolg-one.png" alt="">
+									<li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="{{ asset('frontend/images/bolg-one.png')}}" alt="">
 									</li>
-									<li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="images/bolg-two.png" alt="">
+									<li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="{{ asset('frontend/images/bolg-two.png')}}" alt="">
 									</li>
-									<li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="images/bolg-one.png" alt="">
+									<li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="{{ asset('frontend/images/bolg-one.png')}}" alt="">
 									</li>
 								</ol>
 								<!-- Carousel Slides / Quotes -->
@@ -802,7 +793,7 @@
 										<div class="row">
 											<div class="col-md-5 col-sm-9">
 												<div class="blog-left">
-													<img src="{{asset('frontend/images/bolg-feature.jpg')}}" alt="" />
+													<img src="{{ asset('frontend/images/bolg-feature.jpg')}}" alt="" />
 												</div>
 											</div>
 											<div class="col-md-1 col-sm-3">
@@ -826,7 +817,7 @@
 										<div class="row">
 											<div class="col-md-5 col-sm-9">
 												<div class="blog-left">
-													<img src="{{asset('frontend/images/bolg-feature.jpg')}}" alt="" />
+													<img src="{{ asset('frontend/images/bolg-feature.jpg')}}" alt="" />
 												</div>
 											</div>
 											<div class="col-md-1 col-sm-3">
@@ -850,7 +841,7 @@
 										<div class="row">
 											<div class="col-md-5 col-sm-9">
 												<div class="blog-left">
-													<img src="{{asset('frontend/images/bolg-feature.jpg')}}" alt="" />
+													<img src="{{ asset('frontend/images/bolg-feature.jpg')}}" alt="" />
 												</div>
 											</div>
 											<div class="col-md-1 col-sm-3">
@@ -981,24 +972,24 @@
 			</a>
 		</div><!-- scrolltotop end -->
 		<!-- jquery main JS -->
-		<script type="text/javascript" src="{{asset('frontend/js/jquery.min.js')}}"></script>
+		<script type="text/javascript" src="{{ asset('frontend/js/jquery.min.js')}}"></script>
 		<!-- Bootstrap JS -->
-		<script type="text/javascript" src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
+		<script type="text/javascript" src="{{ asset('frontend/js/bootstrap.min.js')}}"></script>
 		<!-- Owl carousel JS -->
-		<script type="text/javascript" src="{{asset('frontend/js/owl.carousel.min.js')}}"></script>
+		<script type="text/javascript" src="{{ asset('frontend/js/owl.carousel.min.js')}}"></script>
 		<!-- Counterup waypoints JS -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<!-- Counterup JS -->
-		<script type="text/javascript" src="{{asset('frontend/js/jquery.counterup.min.js')}}"></script>
+		<script type="text/javascript" src="{{ asset('frontend/js/jquery.counterup.min.js')}}"></script>
 		<!-- Progressbar JS -->
-		<script type="text/javascript" src="{{asset('frontend/js/progressbar.min.js')}}"></script>
+		<script type="text/javascript" src="{{ asset('frontend/js/progressbar.min.js')}}"></script>
 		<!-- Parallax JS -->
-		<script type="text/javascript" src="{{asset('frontend/js/parallax.min.js')}}"></script>
+		<script type="text/javascript" src="{{ asset('frontend/js/parallax.min.js')}}"></script>
 		<!-- Lightbox JS -->
-		<script type="text/javascript" src="{{asset('frontend/js/lightbox.min.js')}}"></script>
+		<script type="text/javascript" src="{{ asset('frontend/js/lightbox.min.js')}}"></script>
 		<!-- WOW JS -->
-		<script type="text/javascript" src="{{asset('frontend/js/wow-1.3.0.min.js')}}"></script>
+		<script type="text/javascript" src="{{ asset('frontend/js/wow-1.3.0.min.js')}}"></script>
 		<!-- main JS -->
-		<script type="text/javascript" src="{{asset('frontend/js/main.js')}}"></script>
+		<script type="text/javascript" src="{{ asset('frontend/js/main.js')}}"></script>
 	</body>
 </html>
