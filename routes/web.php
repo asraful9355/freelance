@@ -1,9 +1,10 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\Backend\DashboardController;
-
+use App\Http\Controllers\Backend\UserController;
 
 Route::get('/', [FrontendController::class, 'index']);
 
@@ -18,6 +19,7 @@ Route::middleware([
     // })->name('dashboard');
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/my-profile', [UserController::class, 'index'])->name('my.profile');
 
     
 });

@@ -30,7 +30,7 @@
                         <a class="navbar-brand" href="javascript:void(0);"><img src="{{ asset('backend/assets/images/icon-light.svg')}}" width="30" height="30" class="d-inline-block align-top mr-2" alt="">HexaBit</a>
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="javascript:void(0);">Documentation</a></li>
-                            <li class="nav-item"><a class="nav-link" href="page-register.html">Sign Up</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Sign Up</a></li>
                         </ul>
                     </nav>                    
                 </div>

@@ -157,7 +157,13 @@
                         </ul>
                     </li>
                     <li><a href="javascript:void(0);" class="right_toggle icon-menu" title="Right Menu"><i class="icon-settings"></i></a></li>
-                    <li><a href="page-login.html" class="icon-menu"><i class="icon-power"></i></a></li>
+                    <li>
+                        <form method="post" action="{{ route('logout') }}" >
+                            @csrf
+                        <a href="{{ route('logout' )}}" class="icon-menu" onclick="event.preventDefault();
+                        this.closest('form').submit();" ><i class="icon-power"></i></a>
+                        </form>
+                    </li>
                 </ul>
             </div>
         </div>
