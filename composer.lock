@@ -3453,10 +3453,10 @@
         },
         {
             "name": "symfony/console",
+            "version": "v6.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "5a9bd5c543f00157c55face973c149957467db31"
                 "reference": "be294423f337dda97c810733138c0caec1bb0575"
             },
             "dist": {
