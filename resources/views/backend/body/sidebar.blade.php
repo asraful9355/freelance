@@ -1,3 +1,7 @@
+@php
+  $route = Route::current()->getName();
+  $prefix = Request::route()->getPrefix();
+@endphp
 <div id="left-sidebar" class="sidebar">
     <div class="navbar-brand">
         <a href="{{ route('dashboard') }}"><img src="{{ asset('backend/assets/images/icon-dark.svg')}}" alt="HexaBit Logo" class="img-fluid logo"><span>HexaBit</span></a>
@@ -30,16 +34,18 @@
         </div>  
         <nav id="left-sidebar-nav" class="sidebar-nav">
             <ul id="main-menu" class="metismenu">
-                <li class="active"><a href="{{ route('dashboard') }}"><i class="icon-home"></i><span>Dashboard</span></a></li>
+                <li class="{{ ($route == 'dashboard') ? 'active' : '' }}"><a href="{{ route('dashboard') }}"><i class="icon-home"></i><span>Dashboard</span></a></li>
                 <li><a href="app-inbox.html"><i class="icon-envelope"></i><span>Inbox</span></a></li>
                 <li><a href="app-chat.html"><i class="icon-bubbles"></i><span>Chat</span></a></li>
-                <li>
+
+                <li class="{{ ($route == 'menu.index') ? 'active' : '' }}{{ ($route == 'menu.create') ? 'active' : '' }}">
                     <a href="#uiElements" class="has-arrow"><i class="icon-diamond"></i><span>Menu Bar</span></a>
                     <ul>
-                        <li><a href="{{ route('menu.index') }}">All Menu</a></li>
-                        <li><a href="{{ route('menu.create') }}">Add Menu</a></li>
+                        <li class="{{ ($route == 'menu.index') ? 'active' : '' }}"><a href="{{ route('menu.index') }}">All Menu</a></li>
+                        <li class="{{ ($route == 'menu.create') ? 'active' : '' }}"><a href="{{ route('menu.create') }}">Add Menu</a></li>
                     </ul>
                 </li>
+                
                 <li>
                     <a href="#forms" class="has-arrow"><i class="icon-pencil"></i><span>Forms</span></a>
                     <ul>
@@ -54,18 +60,7 @@
                         <li><a href="forms-markdown.html">Markdown</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#Tables" class="has-arrow"><i class="icon-tag"></i><span>Tables</span></a>
-                    <ul>
-                        <li><a href="table-basic.html">Tables Example</a></li>
-                        <li><a href="table-normal.html">Normal Tables</a></li>
-                        <li><a href="table-jquery-datatable.html">Jquery Datatables</a></li>
-                        <li><a href="table-editable.html">Editable Tables</a></li>
-                        <li><a href="table-color.html">Tables Color</a></li>
-                        <li><a href="table-filter.html">Table Filter</a></li>
-                        <li><a href="table-dragger.html">Table dragger</a></li>
-                    </ul>
-                </li>
+             
                 <li><a href="app-taskboard.html"><i class="icon-list"></i><span>Taskboard</span></a></li>                    
                 <li><a href="app-calendar.html"><i class="icon-calendar"></i><span>Calendar</span></a></li>
                 <li><a href="app-contact.html"><i class="icon-book-open"></i><span>Contact</span></a></li>
