@@ -21,7 +21,7 @@ class UserController extends Controller
     {
         return view('backend.admin_profile.index');
     }
-
+  
     /**
      * Show the form for creating a new resource.
      *
