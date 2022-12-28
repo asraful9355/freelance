@@ -33,25 +33,10 @@
                 <li><a href="app-inbox.html"><i class="icon-envelope"></i><span>Inbox</span></a></li>
                 <li><a href="app-chat.html"><i class="icon-bubbles"></i><span>Chat</span></a></li>
                 <li>
-                    <a href="#uiElements" class="has-arrow"><i class="icon-diamond"></i><span>UI Elements</span></a>
+                    <a href="#uiElements" class="has-arrow"><i class="icon-diamond"></i><span>Menu Bar</span></a>
                     <ul>
-                        <li><a href="ui-card.html">Card Layout</a></li>
-                        <li><a href="ui-helper-class.html">Helper Classes</a></li>
-                        <li><a href="ui-bootstrap.html">Bootstrap UI</a></li>
-                        <li><a href="ui-typography.html">Typography</a></li>
-                        <li><a href="ui-tabs.html">Tabs</a></li>
-                        <li><a href="ui-buttons.html">Buttons</a></li>                            
-                        <li><a href="ui-icons.html">Icons</a></li>
-                        <li><a href="ui-notifications.html">Notifications</a></li>
-                        <li><a href="ui-colors.html">Colors</a></li>
-                        <li><a href="ui-dialogs.html">Dialogs</a></li>                                    
-                        <li><a href="ui-list-group.html">List Group</a></li>
-                        <li><a href="ui-media-object.html">Media Object</a></li>
-                        <li><a href="ui-modals.html">Modals</a></li>
-                        <li><a href="ui-nestable.html">Nestable</a></li>
-                        <li><a href="ui-progressbars.html">Progress Bars</a></li>
-                        <li><a href="ui-range-sliders.html">Range Sliders</a></li>
-                        <li><a href="ui-treeview.html">Treeview</a></li>
+                        <li><a href="{{ route('menu.index') }}">All Menu</a></li>
+                        <li><a href="{{ route('menu.create') }}">Add Menu</a></li>
                     </ul>
                 </li>
                 <li>
